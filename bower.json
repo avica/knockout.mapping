@@ -1,12 +1,13 @@
 {
-  "name": "bower-knockout-mapping",
+  "name": "@avica/bower-knockout-mapping",
   "main": "dist/knockout.mapping.js",
-  "version": "2.6.0",
-  "homepage": "https://github.com/crissdev/knockout.mapping",
+  "version": "2.7.0",
+  "homepage": "https://github.com/avica/knockout.mapping",
   "authors": [
     "Steven Sanderson",
     "Roy Jacobs",
-    "Cristian Trifan <criss.trifan@gmail.com>"
+    "Cristian Trifan <criss.trifan@gmail.com>",
+    "Avica Consultancy Services"
   ],
   "description": "Knockout Mapping plugin",
   "keywords": [

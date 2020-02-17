@@ -19,6 +19,7 @@ var buildConfig = {
     '/*!',
     ' * Knockout Mapping plugin v<%= pkg.version %>',
     ' * (c) 2013 Steven Sanderson, Roy Jacobs - http://knockoutjs.com/',
+    ' * (c) 2020 Avica Consultancy Services - https://github.com/avica/knockout.mapping',
     ' * License: MIT (http://www.opensource.org/licenses/mit-license.php)',
     ' */\n'
   ].join('\n')
