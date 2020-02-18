@@ -1,3 +1,7 @@
+## 2.7.0 (2020-02-17)
+
+* Add rawParent property to options for create/update callback.
+ 
 ## 2.6.0 (2016-02-28)
 
 * Issue [#124](https://github.com/SteveSanderson/knockout.mapping/issues/124): Use hasOwnProperty to check for bucket existence

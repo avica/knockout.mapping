@@ -736,6 +736,51 @@ QUnit.test('ko.mapping.fromJS should send parent along to create callback when c
 	});
 });
 
+QUnit.test('ko.mapping.fromJS should send raw parent along to create callback when creating an object', function(assert) {
+	var obj = {
+		a: "a",
+		b: {
+			b1: "b1"
+		},
+		c: [ 1 ]
+	};
+	ko.mapping.fromJS(obj, {
+		"b": {
+			create: function(options) {
+				assert.equal(options.rawParent, obj);
+			}
+		},
+		"c": {
+			create: function(options) {
+				assert.equal(options.rawParent, obj);
+			}
+		}
+	});
+});
+
+
+QUnit.test('ko.mapping.fromJS should send raw parent along to update callback when creating an object', function (assert) {
+	var obj = {
+		a: "a",
+		b: {
+			b1: "b1"
+		},
+		c: [ 1 ]
+	};
+	ko.mapping.fromJS(obj, {
+		"b": {
+			update: function(options) {
+				assert.equal(options.rawParent, obj);
+			}
+		},
+		"c": {
+			update: function(options) {
+				assert.equal(options.rawParent, obj);
+			}
+		}
+	});
+});
+
 QUnit.test('ko.mapping.fromJS should send parent along to create callback when creating an array item inside an object', function(assert) {
 	var obj = {
 		a: "a",
